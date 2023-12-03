@@ -1,0 +1,21 @@
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+  }
+  
+  .cell:after {
+    content: '';
+    padding-bottom: 100%; /* This makes the cell square */
+  }
